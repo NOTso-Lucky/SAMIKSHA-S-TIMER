@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="intro-screen">
+    <h1>Welcome, Samiksha!!!! 🎉</h1>
+
+    <p>Get ready to start your timer ⏳</p>
+    <button id="dive-btn">DIVE IN</button>
+</div>
+
+    <div id="app" style="display:none">
+
+    <div class="container">
+
+        <h2>COUNTDOWN TIMER</h2>
+
+        <div id="set-timer">
+            <input type="number" id="input-days" placeholder="Days" min="0">
+            <input type="number" id="input-hours" placeholder="Hrs" min="0">
+            <input type="number" id="input-minutes" placeholder="Mins" min="0">
+            <input type="number" id="input-seconds" placeholder="Secs" min="0">
+            <button id="start-btn">START</button>
+            <button id="pause-btn">PAUSE</button>
+            <button id="resume-btn">RESUME</button>
+            <button id="reset-btn">RESET</button>
+        </div>
+        <div id="timer">
+
+            <div>
+                <span id="days">00</span>
+                DAYS
+            </div>
+
+            <div>
+                <span id="hours">00</span>
+                HRS
+            </div>
+
+
+            <div>
+                <span id="minutes">00</span>
+                MINS
+            </div>
+
+            <div>
+                <span id="seconds">00</span>
+                SECS
+            </div>
+
+            
+
+        </div>
+
+        <h3>PROGRESS </h3>
+        <div id="progress">
+            <div id="progress-bar"></div>
+            
+
+
+
+        </div>
+
+
+
+        
+    </div>
+    <script src="script.js"></script>
+    <audio id="alarm" src="alarm.mp3" preload="auto"></audio>
+    
+</body>
+</html>

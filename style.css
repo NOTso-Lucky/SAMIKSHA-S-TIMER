@@ -1,0 +1,148 @@
+/* #EDDFEF; */
+body{
+    background-color: #C8A2C8;
+    color: #464655;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto Mono',monospace;
+    letter-spacing: 1px;
+
+
+}
+#set-timer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+#set-timer input{
+    width: 80px;
+    height: 20px;
+    padding: 7px;
+    border-radius: 10px;
+    font-size: 1em;
+    text-align: center;
+    border: none;
+
+}
+#set-timer button{
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #B098A4;
+    color: white;
+    font-family: 'Bebas Neue',sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    transition: transform 0.2s ease,box-shadow 0.2s ease;
+    cursor: pointer;
+
+}
+
+#set-timer button:hover{
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    
+}
+#set-timer button:active{
+    transform: scale(0.95);
+}
+
+.container{
+    width: 100%;
+    background-color: #D7B9D5;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0;
+
+}
+h2{
+    font-size: 2em;
+    margin-bottom: 1em;
+
+
+}
+h3{
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+#timer{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+#timer div{
+    text-align: center;
+    padding: 30px;
+    background: #FAFAFA ;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+
+}
+span{
+    font-size: 3em;
+}
+
+#progress{
+    background-color: white;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    margin-bottom: 1 rem;
+    overflow: hidden;
+}
+
+#progress-bar{
+    background-color: #7CC6FE;
+    width: 0%;
+    height: 100%;
+    transition: width 1s linear;
+    border-radius: 10px;
+}
+#intro-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #F5CAC3;
+    border-radius: 30px;
+    text-align: center;
+    width: 80vh;
+    gap: 20px;
+    animation: fadeIn 2s ease-in-out;
+
+}
+@keyframes fadeIn{
+    from{ opacity: 0;}
+    to{ opacity: 1;}    
+}
+#intro-screen p{
+    font-size: 1.5em;
+
+}
+#dive-btn{
+    padding: 12px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: #79BEEE;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease,box-shadow 0.2s ease;
+
+}
+#dive-btn:hover{
+    transform: scale(1.1);
+}
+#dive-btn:active{
+    transform: scale(0.95);
+}

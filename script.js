@@ -52,7 +52,13 @@ function startTimer(){
             timerInterval=null;
 
             document.getElementById("alarm").play();
-            alert("🎉 YAYYYYYYY YOU DID It  🎊,HARSHIT IS PROUD OF YOUUUUUU");
+            
+            if(totalTime>=3600){
+                document.getElementById("reward").style.display="flex";
+            }
+            else{
+                document.getElementById("custom-alert").style.display = "flex";
+            }
         }
     },1000);
 }
@@ -99,4 +105,14 @@ const diveBtn=document.getElementById("dive-btn");
 diveBtn.addEventListener("click",()=>{
     introScreen.style.display="none";
     app.style.display="block";
+});
+const closeRewardBtn = document.getElementById("close-reward");
+if (closeRewardBtn) {
+    closeRewardBtn.addEventListener("click", () => {
+        document.getElementById("reward").style.display = "none";
+    });
+}
+
+document.getElementById("close-alert").addEventListener("click", () => {
+    document.getElementById("custom-alert").style.display = "none";
 });
